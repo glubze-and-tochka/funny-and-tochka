@@ -28,7 +28,7 @@ def post_form(request: Request):
 
 @app.post("/new_form", response_class=HTMLResponse)
 def post_form(request: Request, form_data : MyForm = Depends(MyForm.as_form)):
-    print(form_data)
+    # print(form_data)
 
     start_tokens = form_data.start_tokens
 
