@@ -1,0 +1,26 @@
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+<h1>New_Form</h1>
+<form method="post">
+    <label for="sepal_length">Sepal_length:</label><br>
+    <input type="number" step=any id="sepal_length" name="sepal_length" value="0"/><br>
+
+    <label for="sepal_width">Sepal_width:</label><br>
+    <input type="number" step=any id="sepal_width" name="sepal_width" value="0" required/><br>
+
+    <label for="petal_length">Petal_length:</label><br>
+    <input type="number" step=any id="petal_length" name="petal_length" value="0"/><br>
+
+    <label for="petal_width">Petal_width:</label><br>
+    <input type="number" step=any id="petal_width" name="petal_width" value="0"/><br>
+
+
+    <input type="submit" value="Submit">
+</form>
+
+<p>Result: {{ result }}</p>
+
+</body>
+</html>

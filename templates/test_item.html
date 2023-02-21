@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Form</title>
+</head>
+<body>
+<h1>Iris Prediction</h1>
+<form method="post">
+    <input type="number" step=any id="sepal_length" name="sepal_length" placeholder="Sepal length" required/><br>
+    <input type="number" step=any id="sepal_width"  name="sepal_width"  placeholder="Sepal width"  required/><br>
+    <input type="number" step=any id="petal_length" name="petal_length" placeholder="Petal length" required/><br>
+    <input type="number" step=any id="petal_width"  name="petal_width"  placeholder="Petal width"  required/><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+<p>Result: {{ result }}</p>
+
+</body>
+</html>
