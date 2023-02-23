@@ -14,6 +14,22 @@ app = FastAPI()
 
 templates = Jinja2Templates(directory="templates/")
 
+shutnik = pipeline('text-generation', 
+                    model="abletobetable/gpt-short-jokes",
+
+                    num_beams=10,
+                    early_stopping=True, 
+                    no_repeat_ngram_size=2, 
+                    num_return_sequences=3 ,   # num_means>=num_return_sequences
+                    top_k=50, 
+                    top_p=0.95, 
+                    temperature=0.6,
+                    # min_length=10,
+                    max_length=20, #80
+
+                    tokenizer='sberbank-ai/rugpt3small_based_on_gpt2'
+                )
+
 
 @app.get("/")
 def home(request: Request):
@@ -24,28 +40,6 @@ def home(request: Request):
 
 @app.post("/", response_class=HTMLResponse)
 def post_form(request: Request, some_text : str = Form(...)):
-    print(some_text)
-
-    # model_folder = 'small_gpt'
-
-    # generation_config = AutoConfig.from_pretrained(f'{model_folder}/config.json')
-
-    shutnik = pipeline('text-generation', 
-                        model="abletobetable/gpt-short-jokes",
-
-                        num_beams=10,
-                        early_stopping=True, 
-                        no_repeat_ngram_size=2, 
-                        num_return_sequences=3 ,   # num_means>=num_return_sequences
-                        top_k=50, 
-                        top_p=0.95, 
-                        temperature=0.6,
-                        # min_length=10,
-                        max_length=20, #80
-
-                        tokenizer='sberbank-ai/rugpt3small_based_on_gpt2'
-                        # config = generation_config
-                    )
     
     result : str = shutnik(some_text)[0]['generated_text']
 
