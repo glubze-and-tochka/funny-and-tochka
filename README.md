@@ -2,7 +2,7 @@
 
 ## Alex part
 
-gpt_research_and_train.ipynb - немного EDA по датасету + обучение с логами в wandb. 
+gpt_research_and_train.ipynb - немного EDA по датасету + обучение с логами в wandb. Длина шутки до 20 токенов.
 
 Предобученная gpt модель взята здесь: https://huggingface.co/sberbank-ai/rugpt3large_based_on_gpt2
 
