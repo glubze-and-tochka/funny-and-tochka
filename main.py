@@ -17,7 +17,7 @@ templates = Jinja2Templates(directory="templates/")
 
 @app.get("/")
 def home(request: Request):
-    result = 0
+    result = 'type the beginning of the joke'
     return templates.TemplateResponse("test_item.html", {"request": request, 'result': result})
 
 
