@@ -9,7 +9,7 @@ gpt_research_and_train.ipynb - немного EDA по датасету + обу
 Дообученная модель добавлена на huggingface model hub: https://huggingface.co/abletobetable/gpt-short-jokes
 
 ![W B Chart 21 02 2023, 15_14_04](https://user-images.githubusercontent.com/109301202/220342377-ef65c81c-992b-4946-8783-e3f2323a0048.png)
-
+ file:///home/aleksandr/%D0%92%D0%B8%D0%B4%D0%B5%D0%BE/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0/%D0%97%D0%B0%D0%BF%D0%B8%D1%81%D1%8C%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%20%D0%BE%D1%82%2023.02.2023%2015:45:40.webm
 Парочка примеров:
 
 *Молоко* вдвойне вкусней, если его не запивать молоком.
