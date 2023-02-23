@@ -24,7 +24,7 @@ gpt_research_and_train.ipynb - немного EDA по датасету + обу
 
 *Яйца* курицу не учат. - Почему? - Потому что у них нет яиц.
 
-## George part (data mining + research in diffusion text model)
+## George part (data mining + research in diffusion text models)
 
 В результате исследования новейших state-of-the-art алгоритмов была выбрана диффузионная модель DiffuSeq: Sequence to Sequence Text Generation With Diffusion Models(надо сделать чтобы была ссылка на статью https://arxiv.org/abs/2210.08933)
 DiffuSeq показывает хорошие значения метрик в задачах Seq2seq, сравнимые со значениеми модели GPT2.
