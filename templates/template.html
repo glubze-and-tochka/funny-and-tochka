@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Python FastAPI Joke Maker</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+<section class="vh-100" style="background-color: #262626;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-lg-9 col-xl-7">
+        <div class="card rounded-3">
+          <div class="card-body p-4">
+ 
+            <h4 class="text-center my-3 pb-3">Python FastAPI Joke Maker</h4>
+            <form class="row" action="/generate/add" method="post">
+              <div class="col-4">
+                <div class="form-outline">
+                  <input type="text" id="text" name="text" class="form-control" placeholder="Enter some words" required/>
+                </div>
+              </div>
+ 
+              <div class="col-6">
+                <button type="submit" class="btn btn-primary">Make Joke</button>
+              </div>
+            </form>
+ 
+            <table class="table mb-4">
+                <thead>
+                    <tr>
+                      <th scope="col">Input words</th>
+                      <th scope="col">Joke</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for joke in jokes_list %}
+                    <tr>
+                      <th scope="row">{{joke.input }}</th>
+                      <td>{{ joke.output }}</td>
+                      <td>
+                        <a class="btn btn-danger ms-1" href="/delete/{{ joke.id }}">Delete</a>
+                      </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>   

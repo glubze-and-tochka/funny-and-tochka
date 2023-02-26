@@ -8,3 +8,4 @@ Jinja2
 python-multipart
 wandb
 torch
+sqlalchemy
