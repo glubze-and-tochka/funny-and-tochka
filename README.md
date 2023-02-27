@@ -18,7 +18,7 @@
 
 *Яйца* курицу не учат. - Почему? - Потому что у них нет яиц.
 
-[Запись экрана от 23.02.2023 15:45:40.webm](https://user-images.githubusercontent.com/109301202/220915322-b973e440-5d5a-42a3-95c4-f98bb5b16ea2.webm)
+[Запись экрана от 27.02.2023 10:05:03.webm](https://user-images.githubusercontent.com/109301202/221497248-a5801561-5315-40be-acf7-b6f280202262.webm)
 
 Предобученная gpt модель взята здесь: https://huggingface.co/sberbank-ai/rugpt3large_based_on_gpt2
 
@@ -60,7 +60,6 @@ uvicorn main:app --reload
   * Добавить диффузионную модель
   * Добавить GAN модель
   * Улучшать качество генерции анекдотов
-
 
 ## Контакты
 
