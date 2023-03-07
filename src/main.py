@@ -9,9 +9,9 @@ app = FastAPI()
 
 from sqlalchemy.orm import Session
 
-import models
+import src.models as models
 
-from database import SessionLocal, engine
+from src.database import SessionLocal, engine
 
 models.Base.metadata.create_all(bind=engine)
 

@@ -1,6 +1,6 @@
 from sqlalchemy import Boolean, Column, Integer, String
 
-from database import Base 
+from src.database import Base 
 
 class JokesDB(Base):
     __tablename__ = "generates"
